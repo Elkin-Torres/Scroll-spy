@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Ejercicios del DOM</h1>
+  </header>
+
+  <button class="panel-btn hamburger hamburger--vortex " type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1" data-scrollSpy>Reloj Digital y Alarma Sonora</a>
+      <a href="#seccion2" data-scrollSpy>Eventos del Teclado</a>
+      <a href="#seccion3" data-scrollSpy>Countdown</a>
+      <a href="#seccion4" data-scrollSpy>Diseño responsivo</a>
+      <a href="#seccion5" data-scrollSpy>Probador responsivo</a>
+      <a href="#seccion6" data-scrollSpy>Detección de conexión</a>
+      <a href="#seccion7" data-scrollSpy>Geolocalización</a>
+      <a href="#seccion8" data-scrollSpy>Detección cámara</a>
+      <a href="#seccion9" data-scrollSpy>Filtros de búsquedas</a>
+      <a href="#seccion10" data-scrollSpy>Sorteo digital</a>
+      <a href="#seccion11" data-scrollSpy>Responsive Slider</a>
+
+
+    </nav>
+  </aside>
+
+  <main>
+    <section id="seccion1" class="section" data-scrollSpy>
+      <h2>Reloj Digital y Alarma Sonora</h2>
+      <h4 class="mainTime" id="time">
+
+      </h4>
+      <div>
+        <button id="mostrarReloj">Iniciar reloj</button>
+        <button id="ocultarReloj">Detener reloj</button>
+        <button id="iniciarAlarma">Iniciar alarma</button>
+        <button id="detenerAlarma">Detener alarma</button>
+
+      </div>
+    </section>
+    <section id="seccion2" class="section" data-scrollSpy>
+      <h2>Eventos del Teclado</h2>
+      <section id="campo">
+        <section id="pelota"></section>
+      </section>
+      <footer class="aviso"><small>Mueve el balón con las flechas del teclado</small></footer>
+    </section>
+    <section id="seccion3" class="section" data-scrollSpy>
+      <h2 class="Count">Countdown</h2>
+      <h3 class="faltan">Para que se termine el año faltan:</h3>
+      <div class="Countdown">
+        <div>
+          <h3 class="conteo" id="dias"></h3>
+          <H4 class="esquema">Días</H4>
+        </div>
+        <div>
+          <h3 class="conteo" id="horas"></h3>
+          <H4 class="esquema">Horas</H4>
+        </div>
+        <div>
+          <h3 class="conteo" id="minutos"></h3>
+          <H4 class="esquema">Minutos</H4>
+        </div>
+        <div>
+          <h3 class="conteo" id="segundos"></h3>
+          <H4 class="esquema">Segundos</H4>
+        </div>
+      </div>
+      <h3 class="añoNuevo" id="añoNuevo"></h3>
+
+    </section>
+    <section id="seccion4" class="section" data-scrollSpy>
+      <h2>Diseño Responsivo</h2>
+      <section id="video"></section>
+      <section id="ubicacion"></section>
+    </section>
+
+    <section id="seccion5" class="section" data-scrollSpy>
+      <h2>Probador responsivo</h2>
+      <form id="formulario">
+        <input type="text" name="URL" id="url" placeholder="URL" required>
+        <br>
+        <input type="number" name="ancho" id="Ancho" placeholder="Ancho" required>
+        <br>
+        <input type="number" name="alto" id="Alto" placeholder="Alto" required>
+        <br>
+        <input type="submit" name="enviar" value="probar">
+        <input type="button" name="finalizar" value="cerrar">
+      </form>
+    </section>
+    <section id="seccion6" class="section" data-scrollSpy>
+      <h2>Detección de conexión</h2>
+      <p class="parrafoDeteccionDeRed">-Si desconectas el internet podrás observar un aviso que saldrá en la parte
+        superior de la ventana el cual informará de la caída de la red,por otro lado cuando se reestlezca la conexión
+        podrás evidenciar un aviso anunciando dicho evento-</p>
+    </section>
+    <section id="seccion7" class="section" data-scrollSpy>
+      <h2>Geolocalización</h2>
+      <button class="obtenerUbicacion">Obtener Ubicación</button>
+      <button class="borrarUbicacion">Borrar Ubicación</button>
+      <p class="latitud">Latitud: <mark id="latitud"></mark></p>
+      <p class="longitud">Longitud: <mark id="longitud"></mark></p>
+      <a target="_blank" rel="nofollow" href="#" id="enlace"> Abrir en Google Maps</a>
+
+    </section>
+    <section id="seccion8" class="section" data-scrollSpy>
+      <h2>Detección Cámara</h2>
+      <button id="activarCamara">
+        Activar cámara
+      </button>
+      <div>
+        <video class="video"></video>
+      </div>
+    </section>
+    <section id="seccion9" class="section" data-scrollSpy>
+      <h2>Filtros de búsqueda</h2>
+      <input type="search" placeholder="Buscar..." class="card-filter">
+      <article class="cards">
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/any" alt="Any">
+          <figcaption>Any</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/animals" alt="Animals">
+          <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/arch" alt="Arch">
+          <figcaption>Architecture</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/nature" alt="Nature">
+          <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/people" alt="People">
+          <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/tech" alt="Tech">
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/any/grayscale" alt="Grayscale">
+          <figcaption>Grayscale</figcaption>
+        </figure>        
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/any/sepia" alt="Sepia">
+          <figcaption>Sepia</figcaption>
+        </figure>
+      </article>
+
+    </section >
+    <section id= "seccion10" class="section" data-scrollSpy>
+      <h2> - Sorteo digital -</h2>
+   
+      <ul>
+        <li class="lenguaje">Javascript</li>
+        <li class="lenguaje">Java</li>
+        <li class="lenguaje">Python</li>
+        <li class="lenguaje">Go</li>
+        <li class="lenguaje">C++</li>
+        <li class="lenguaje">Ruby</li>
+        <li class="lenguaje">PHP</li>
+        <li class="lenguaje">Rust</li>
+        <li class="lenguaje">Perl</li>
+        <li class="lenguaje">Visual Basic</li>
+      </ul>
+      <button class="sorteo">Obtener ganador</button>
+    </section>
+    <section id="seccion11" class="section" data-scrollSpy>
+      <h2>Responsive Slider</h2>
+      <div class="contenedor">
+        <div class="contenedorSliders">
+          <div class="slider active">
+            <img src="https://placeimg.com/400/400/animals" alt="Animals">
+          </div>
+          <div class="slider">
+            <img src="https://placeimg.com/400/400/arch" alt="Arch">
+          </div>
+          <div class="slider">
+            <img src="https://placeimg.com/400/400/nature" alt="Nature">
+          </div>
+          <div class="slider">
+          <img src="https://placeimg.com/400/400/people" alt="People">
+          </div>
+        </div>
+        <div class="sliderBtns">
+          <a class="prevBtn" href="#">❮</a>
+          <a class="nextBtn" href="#">❯</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="btnArrow hidden">&#11014; </button>
+  <button class="btnCambioColor"> 🌙</button>
+
+  <script src="logica.js" type="module"></script>
+</body>
+
+</html>
