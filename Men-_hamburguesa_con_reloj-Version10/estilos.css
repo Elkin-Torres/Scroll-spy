@@ -375,7 +375,10 @@ transition: opacity 1s ease;
 
 .sliderBtns a:hover {
 color:grey;
+
 }
+
+
 
 /*Scroll spy*/
 @media screen and (min-width: 1024px){
