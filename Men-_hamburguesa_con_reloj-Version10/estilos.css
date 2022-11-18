@@ -201,6 +201,20 @@ transition: all 0.3s ease-out;
   display: none;
 }
 
+
+.error-formulario {
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: var(--form-error-color);
+  color: #fff;
+  transition: all 800ms ease;
+}
+
+.error-formulario.activar {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+} 
+
 .esquema {
   font-size: 16px;
 }
@@ -209,6 +223,52 @@ transition: all 0.3s ease-out;
   text-align: center;
   margin-top: 3rem;
   font-size: 14px;
+}
+
+.formulario {
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.formulario > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario legend,
+.form-response {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formulario input,
+.formulario textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.formulario input[type="submit"] {
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario[required]:valid {
+  border: thin solid var(--form-ok-color);
+}
+
+.formulario[required]:invalid {
+  border: thin solid var(--form-error-color);
 }
 
 header {
@@ -261,6 +321,11 @@ h4 {
   color: var(--second-color);
   background-color: var(--main-modal-color);
 }
+
+.none{
+  display: none;
+}
+
 .panel {
   position: fixed;
   z-index: 998;

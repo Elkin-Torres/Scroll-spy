@@ -36,6 +36,7 @@
       <a href="#seccion10" data-scrollSpy>Sorteo digital</a>
       <a href="#seccion11" data-scrollSpy>Responsive Slider</a>
       <a href="#seccion12" data-scrollSpy>Video automático</a>
+      <a href="#seccion13" data-scrollSpy>Validación Formulario</a>
 
 
     </nav>
@@ -160,17 +161,17 @@
         <figure class="card">
           <img src="https://placeimg.com/200/200/any/grayscale" alt="Grayscale">
           <figcaption>Grayscale</figcaption>
-        </figure>        
+        </figure>
         <figure class="card">
           <img src="https://placeimg.com/200/200/any/sepia" alt="Sepia">
           <figcaption>Sepia</figcaption>
         </figure>
       </article>
 
-    </section >
-    <section id= "seccion10" class="section" data-scrollSpy>
+    </section>
+    <section id="seccion10" class="section" data-scrollSpy>
       <h2> - Sorteo digital -</h2>
-   
+
       <ul>
         <li class="lenguaje">Javascript</li>
         <li class="lenguaje">Java</li>
@@ -199,7 +200,7 @@
             <img src="https://placeimg.com/400/400/nature" alt="Nature">
           </div>
           <div class="slider">
-          <img src="https://placeimg.com/400/400/people" alt="People">
+            <img src="https://placeimg.com/400/400/people" alt="People">
           </div>
         </div>
         <div class="sliderBtns">
@@ -211,8 +212,31 @@
     <section id="seccion12" class="section" data-scrollSpy>
       <h2>Video automático</h2>
       <div>
-        <video src="assets/VID-20210627-WA0020.mp4" width="600px" height="auto" preload="auto" controls muted ></video>
+        <video src="assets/VID-20210627-WA0020.mp4" width="600px" height="auto" preload="auto" controls muted></video>
       </div>
+    </section >
+    <section  id="seccion13" class="section" data-scrollSpy>
+<h2>Validación de formulario</h2>
+<form class="formulario" form action="https://formsubmit.co/elkin148@hotmail.com" method="POST" target="_blank">
+  <legend>Por favor ingrese la siguiente información</legend>
+  <input type="text" name="name" placeholder="Escribe tu nombre..." pattern="^([a-zA-ZÑñÁáÉéÍíÓóÚúÜü]+\s?)+$"
+    title="La información registrada no es válida como un nombre" autocomplete="off" required>
+  <input type="email" name="email" placeholder="Escribe tu email..."
+    pattern="^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-z]{2,15})$"
+    title="La información ingresada no es válida como un email" autocomplete="off" required>
+  <input type="text" name="asunto" placeholder="Escribe el asunto..." title="El asunto es requerido..."
+    autocomplete="off" required>
+  <textarea name="comentarios" placeholder="Escribe tus comentarios..." cols="50" rows="5" data-pattern="^.{1,255}$"
+    title="Los comentarios no pueden exceder los 250 carácteres" required></textarea>
+
+  <input type="submit">
+  <div class="form-loader none">
+    <img src="assets/tail-spin.svg" alt="Cargando">
+  </div>
+  <div class="form-response none">
+    <p>Los datos fueron enviados</p>
+  </div>
+</form>
     </section>
 
   </main>

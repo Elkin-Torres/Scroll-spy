@@ -15,6 +15,7 @@ import {sorteo} from "./sorteo.js";
 import {slider} from "./sliderResponsive.js";
 import {scroll_Spy} from "./spyScroll.js";
 import {videoAutomatico} from "./videoPlay.js";
+import {validacion} from "./validaciónFormulario.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -60,6 +61,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   scroll_Spy();
 
   videoAutomatico();
+
+  validacion();
 
 });
 
