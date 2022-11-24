@@ -17,7 +17,7 @@ export function deteccion(video, activarCamara) {
           $video.insertAdjacentHTML(
             "beforebegin",
             `<p>Ocurrio el siguiente error:<mark>${error}</mark></p> 
-            <p>- Para acceder a la cámara debe conceder el permiso, luego debe actualizar el navegador -</p>`
+            <p>- Para acceder a la cámara debes conceder el permiso, luego debes actualizar el navegador -</p>`
           );
           console.log(`Ocurrio el siguiente error: ${error}`);
         });
