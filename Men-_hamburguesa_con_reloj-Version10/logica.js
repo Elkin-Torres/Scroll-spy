@@ -16,6 +16,7 @@ import {slider} from "./sliderResponsive.js";
 import {scroll_Spy} from "./spyScroll.js";
 import {videoAutomatico} from "./videoPlay.js";
 import {validacion} from "./validaciónFormulario.js";
+import { narradorDeTexto } from "./narrador.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -73,6 +74,7 @@ d.addEventListener("keydown", (e) => {
 
 deteccionConexion();
 
+narradorDeTexto();
 
 
 

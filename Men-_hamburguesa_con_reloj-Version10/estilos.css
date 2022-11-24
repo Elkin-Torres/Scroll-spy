@@ -443,6 +443,9 @@ color:grey;
 
 }
 
+textarea{
+  resize: none;
+}
 
 
 /*Scroll spy*/
