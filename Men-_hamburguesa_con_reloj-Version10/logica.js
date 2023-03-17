@@ -23,7 +23,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburguerMenu(".panel-btn", ".panel", ".menu a");
   mostrar("#time", "#mostrarReloj", "#ocultarReloj");
   sonarAlarma("assets/alarma.mp3", "#iniciarAlarma", "#detenerAlarma");
-  conteo("Dec 31 2022 23:59:59 GMT-0500");
+  conteo("Dec 31 2023 23:59:59 GMT-0500");
   retornar(".btnArrow");
   cambioColor(".btnCambioColor");
   pantallaResponsiva(
