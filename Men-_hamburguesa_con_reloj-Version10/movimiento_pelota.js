@@ -9,7 +9,7 @@ export function movement(e, pelota, campo) {
     limitsBlock = $block.getBoundingClientRect(),
     limitsSpace = $space.getBoundingClientRect();
 
-  
+  //Depending on which arrow is pressed, the respective displacement is applied to $block
   $block.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
   switch (e.key) {
     case "ArrowUp":

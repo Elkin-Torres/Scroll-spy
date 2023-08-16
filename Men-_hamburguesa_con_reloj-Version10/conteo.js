@@ -7,6 +7,7 @@ let añoNuevo = d.getElementById("añoNuevo");
 
 export function conteo(fechaFutura) {
   let progreso;
+  //the data for the count is established
   progreso = setInterval(() => {
     let fechaActual = new Date();
     let fechaConteo = (new Date(fechaFutura) - fechaActual) / 1000;
@@ -24,10 +25,11 @@ export function conteo(fechaFutura) {
     horas.innerHTML = horasRestantes;
     minutos.innerHTML = minutosRestantes;
     segundos.innerHTML = segundosRestantes;
-
+    //count information is inserted
     if (fechaConteo <= 1) {
       añoNuevo.insertAdjacentText("afterbegin", "¡Feliz año!");
     }
+    //count data is updated
     if (fechaConteo <= 1) clearInterval(progreso);
   }, 1000);
 }

@@ -5,23 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Scroll-spy</title>
+  <meta name="description" content="Explora las diferentes funcionalidades que con ayuda de la manipulación del DOM se pueden crear con Javascript, HTML y CSS">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
   <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-
+  <!--header-->
   <header class="header">
     <h1>Ejercicios del DOM</h1>
   </header>
-
+  <!--btn menu-hamburguer-->
   <button class="panel-btn hamburger hamburger--vortex " type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
-
+  <!--aside menu starts-->
   <aside class="panel">
     <nav class="menu">
       <a href="#seccion1" data-scrollSpy>Reloj Digital y Alarma Sonora</a>
@@ -38,13 +39,13 @@
       <a href="#seccion12" data-scrollSpy>Video automático</a>
       <a href="#seccion13" data-scrollSpy>Validación Formulario</a>
       <a href="#seccion14" data-scrollSpy>Narrador</a>
-
-
-
     </nav>
   </aside>
+  <!--aside menu ends-->
 
+<!--main starts-->
   <main>
+    <!--section 1 starts-->
     <section id="seccion1" class="section" data-scrollSpy>
       <h2>Reloj Digital y Alarma Sonora</h2>
       <h4 class="mainTime" id="time">
@@ -58,6 +59,8 @@
 
       </div>
     </section>
+    <!--section 1 ends-->
+    <!--section 2 starts-->
     <section id="seccion2" class="section" data-scrollSpy>
       <h2>Eventos del Teclado</h2>
       <section id="campo">
@@ -65,6 +68,8 @@
       </section>
       <footer class="aviso"><small>Mueve el balón con las flechas del teclado</small></footer>
     </section>
+    <!--section 2 ends-->
+    <!--section 3 starts-->
     <section id="seccion3" class="section" data-scrollSpy>
       <h2 class="Count">Countdown</h2>
       <h3 class="faltan">Para que se termine el año faltan:</h3>
@@ -89,12 +94,15 @@
       <h3 class="añoNuevo" id="añoNuevo"></h3>
 
     </section>
+    <!--section 3 ends-->
+    <!--section 4 starts-->
     <section id="seccion4" class="section" data-scrollSpy>
       <h2>Diseño Responsivo</h2>
       <section id="video"></section>
       <section id="ubicacion"></section>
     </section>
-
+    <!--section 4 ends-->
+    <!--section 5 starts-->
     <section id="seccion5" class="section" data-scrollSpy>
       <h2>Probador responsivo</h2>
       <form id="formulario">
@@ -108,12 +116,16 @@
         <input type="button" name="finalizar" value="cerrar">
       </form>
     </section>
+    <!--section 5 ends-->
+    <!--section 6 starts-->
     <section id="seccion6" class="section" data-scrollSpy>
       <h2>Detección de conexión</h2>
       <p class="parrafoDeteccionDeRed">-Si desconectas el internet podrás observar un aviso que saldrá en la parte
         superior de la ventana el cual informará de la caída de la red, por otro lado cuando se restablezca la conexión
         podrás evidenciar un aviso anunciando dicho evento-</p>
     </section>
+    <!--section 6 ends-->
+    <!--section 7 starts-->
     <section id="seccion7" class="section" data-scrollSpy>
       <h2>Geolocalización</h2>
       <button class="obtenerUbicacion">Obtener Ubicación</button>
@@ -123,6 +135,8 @@
       <a target="_blank" rel="nofollow" href="#" id="enlace"> Abrir en Google Maps</a>
 
     </section>
+    <!--section 7 ends-->
+    <!--section 8 starts-->
     <section id="seccion8" class="section" data-scrollSpy>
       <h2>Detección Cámara</h2>
       <button id="activarCamara">
@@ -132,45 +146,49 @@
         <video class="video"></video>
       </div>
     </section>
+    <!--section 8 ends-->
+    <!--section 9 starts-->  
     <section id="seccion9" class="section" data-scrollSpy>
       <h2>Filtros de búsqueda</h2>
       <input type="search" placeholder="Buscar..." class="card-filter">
       <article class="cards">
         <figure class="card">
-          <img src="https://placeimg.com/200/200/any" alt="Any">
+          <img src="https://loremflickr.com/200/200" alt="Any">
           <figcaption>Any</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/animals" alt="Animals">
+          <img src="https://loremflickr.com/200/200/animals" alt="Animals">
           <figcaption>Animals</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/arch" alt="Arch">
+          <img src="https://loremflickr.com/200/200/arch" alt="Arch">
           <figcaption>Architecture</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/nature" alt="Nature">
+          <img src="https://loremflickr.com/200/200/nature" alt="Nature">
           <figcaption>Nature</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/people" alt="People">
+          <img src="https://loremflickr.com/200/200/people" alt="People">
           <figcaption>People</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/tech" alt="Tech">
+          <img src="https://loremflickr.com/200/200/tech" alt="Tech">
           <figcaption>Tech</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/any/grayscale" alt="Grayscale">
+          <img src="https://loremflickr.com/200/200/grayscale" alt="Grayscale">
           <figcaption>Grayscale</figcaption>
         </figure>
         <figure class="card">
-          <img src="https://placeimg.com/200/200/any/sepia" alt="Sepia">
+          <img src="https://loremflickr.com/200/200/sepia" alt="Sepia">
           <figcaption>Sepia</figcaption>
         </figure>
       </article>
 
     </section>
+    <!--section 9 ends-->  
+    <!--section 10 starts-->  
     <section id="seccion10" class="section" data-scrollSpy>
       <h2> - Sorteo digital -</h2>
 
@@ -188,21 +206,23 @@
       </ul>
       <button class="sorteo">Obtener ganador</button>
     </section>
+    <!--section 10 ends-->  
+    <!--section 11 starts-->  
     <section id="seccion11" class="section" data-scrollSpy>
       <h2>Responsive Slider</h2>
       <div class="contenedor">
         <div class="contenedorSliders">
           <div class="slider active">
-            <img src="https://placeimg.com/400/400/animals" alt="Animals">
+            <img src="https://loremflickr.com/600/600/animals" alt="Animals">
           </div>
           <div class="slider">
-            <img src="https://placeimg.com/400/400/arch" alt="Arch">
+            <img src="https://loremflickr.com/600/600/arch" alt="Arch">
           </div>
           <div class="slider">
-            <img src="https://placeimg.com/400/400/nature" alt="Nature">
+            <img src="https://loremflickr.com/600/600/nature" alt="Nature">
           </div>
           <div class="slider">
-            <img src="https://placeimg.com/400/400/people" alt="People">
+            <img src="https://loremflickr.com/600/600/people" alt="People">
           </div>
         </div>
         <div class="sliderBtns">
@@ -211,12 +231,16 @@
         </div>
       </div>
     </section>
+    <!--section 11 ends-->  
+    <!--section 12 starts-->  
     <section id="seccion12" class="section" data-scrollSpy>
       <h2>Video automático</h2>
       <div>
         <video src="assets/VID-20210627-WA0020.mp4" width="600px" height="auto" preload="auto" controls muted></video>
       </div>
     </section>
+    <!--section 12 ends-->  
+    <!--section 13 starts-->  
     <section id="seccion13" class="section" data-scrollSpy>
       <h2>Validación de formulario</h2>
       <form class="formulario" form action="https://formsubmit.co/elkin148@hotmail.com" method="POST" target="_blank">
@@ -240,6 +264,8 @@
         </div>
       </form>
     </section>
+    <!--section 13 ends-->  
+    <!--section 14 starts-->  
     <section id="seccion14" class="section" data-scrollSpy>
       <h2>Narrador</h2>
       <select id="selector-narrador">
@@ -251,12 +277,15 @@
       <button class="narrador-btn">Enviar</button>
 
     </section>
+    <!--section 14 ends-->  
 
   </main>
+<!--main ends-->
+
 
   <button class="btnArrow hidden">&#11014; </button>
   <button class="btnCambioColor"> 🌙</button>
-
+<!--script js-->
   <script src="logica.js" type="module"></script>
 </body>
 

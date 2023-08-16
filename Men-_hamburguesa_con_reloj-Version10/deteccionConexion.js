@@ -3,6 +3,7 @@ const d = document,
   n = navigator;
 
 export function deteccionConexion() {
+  //Notices for connection status are established
   const onLine = () => {
     const $Div = d.createElement("div");
     if (n.onLine === true) {
@@ -18,7 +19,7 @@ export function deteccionConexion() {
     d.body.insertAdjacentElement("afterbegin", $Div);
     setTimeout(() => d.body.removeChild($Div), 2000);
   };
-
+  //connection status is identified
   w.addEventListener("online", (e) => onLine());
   w.addEventListener("offline", (e) => onLine());
 }

@@ -5,7 +5,7 @@ const d = document;
 
 export function mostrar(reloj, btnMostrar, btnOcultar) {
   let aparicion;
-
+  //if you click on btnShow, the clock is displayed
   d.addEventListener("click", (e) => {
     if (e.target.matches(btnMostrar)) {
       aparicion = setInterval(() => {
@@ -14,7 +14,7 @@ export function mostrar(reloj, btnMostrar, btnOcultar) {
       }, 1000);
       e.target.disabled = true;
     }
-
+    //if you click on btnHide, the clock is hidden
     if (e.target.matches(btnOcultar)) {
       clearInterval(aparicion);
       d.querySelector(reloj).innerHTML = null;
@@ -27,15 +27,16 @@ export function sonarAlarma(sonido, btnIniciar, btnParar) {
   let temporizador;
   let $alarma = d.createElement("audio");
   $alarma.src = sonido;
-
+  
   d.addEventListener("click", (e) => {
+    //if you click on btnStart, the alarm starts to sound
     if (e.target.matches(btnIniciar)) {
       temporizador = setInterval(() => {
         $alarma.play();
       }, 0);
       e.target.disabled = true;
     }
-
+    //if btnStop is clicked, the alarm stops
     if (e.target.matches(btnParar)) {
       clearInterval(temporizador);
       $alarma.pause();

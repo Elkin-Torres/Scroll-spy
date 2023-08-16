@@ -1,3 +1,4 @@
+/*reset styles starts*/
 :root {
   --main-font: sans-serif;
   --font-size: 16px;
@@ -63,14 +64,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*reset styles ends*/
 
-/*Menú*/
-
- /*.aBtnArrow{
-  z-index: 999;
-  position: fixed;
-} */
-
+/*styles starts*/
 #añoNuevo {
   text-align: center;
   font-size: 70px;
@@ -446,9 +442,9 @@ color:grey;
 textarea{
   resize: none;
 }
+/*styles ends*/
 
-
-/*Scroll spy*/
+/*Media*/
 @media screen and (min-width: 1024px){
   
   body{

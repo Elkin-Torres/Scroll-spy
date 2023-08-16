@@ -9,8 +9,7 @@ export function narradorDeTexto() {
   let voices = [];
 
   d.addEventListener("DOMContentLoaded", (e) => {
-    // console.log(window.speechSynthesis);
-    //console.log(window.speechSynthesis.getVoices());
+    //the voices are obtained and their respective values ​​are recorded in the options
     speechSynthesis.addEventListener("voiceschanged", (e) => {
       voices = speechSynthesis.getVoices();
 
@@ -23,7 +22,7 @@ export function narradorDeTexto() {
       });
     });
   });
-
+  //any voice that has been chosen is identified and assigned
   d.addEventListener("change", (e) => {
     if (e.target === $selector) {
       speechMessage.voice = voices.find(
@@ -31,6 +30,7 @@ export function narradorDeTexto() {
       );
     }
   });
+  //the written text is passed to the voice so that it can be spoken
   d.addEventListener("click", (e) => {
     if (e.target === $narradorbtn) {
       speechMessage.text = $texto.value;

@@ -7,6 +7,7 @@ export function slider (){
 let i= 0;
 
 d.addEventListener("click",(e)=>{
+  //clicking on $prev displays the image before the current one
 if(e.target === $prev){
   e.preventDefault();
   $slider[i].classList.remove("active");
@@ -16,7 +17,7 @@ if(e.target === $prev){
   }
   $slider[i].classList.add("active");
 }
-
+//clicking $next displays the image next to the one you are currently on
 if(e.target === $next){
 e.preventDefault();
   $slider[i].classList.remove("active");

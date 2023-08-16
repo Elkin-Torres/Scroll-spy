@@ -2,7 +2,7 @@ let d = document;
 
 export function retornar(btn) {
   let $btn = d.querySelector(btn);
-
+  //hide or show the $btn
   window.addEventListener("scroll", (e) => {
     let scroll = document.documentElement.scrollTop || window.scrollY;  
 
@@ -12,7 +12,7 @@ export function retornar(btn) {
       $btn.classList.add("hidden");
     }
   });
-
+  //return to the top of the page by clicking on btn
   d.addEventListener("click", (e) => {
     if (e.target.matches(btn)) {
       window.scrollTo({

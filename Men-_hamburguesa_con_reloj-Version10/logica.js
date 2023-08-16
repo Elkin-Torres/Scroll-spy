@@ -1,4 +1,3 @@
-import  hamburguerMenu from "./menu_hamburguesa.js";
 import { mostrar, sonarAlarma } from "./reloj.js";
 import { shortcuts } from "./atajos.js";
 import { movement } from "./movimiento_pelota.js";
@@ -19,8 +18,8 @@ import {validacion} from "./validaciónFormulario.js";
 import { narradorDeTexto } from "./narrador.js";
 const d = document;
 
+/*functions that are called when loading the DOM starts*/
 d.addEventListener("DOMContentLoaded", (e) => {
-  hamburguerMenu(".panel-btn", ".panel", ".menu a");
   mostrar("#time", "#mostrarReloj", "#ocultarReloj");
   sonarAlarma("assets/alarma.mp3", "#iniciarAlarma", "#detenerAlarma");
   conteo("Dec 31 2023 23:59:59 GMT-0500");
@@ -66,14 +65,16 @@ d.addEventListener("DOMContentLoaded", (e) => {
   validacion();
 
 });
+/*functions that are called when loading the DOM ends*/
 
+/*functions called when a key is pressed*/
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   movement(e, "pelota", "campo");  
 });
 
+//functions called by default
 deteccionConexion();
-
 narradorDeTexto();
 
 
